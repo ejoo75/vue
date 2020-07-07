@@ -18,10 +18,21 @@
     </div>
   </template>
   <script>
-    import TodoHeader from './components/TodoHeader.vue'
-    import TodoHeader from './components/TodoInput.vue'
-    import TodoHeader from './components/TodoList.vue'
-    import TodoHeader from './components/TodoFooter.vue'
+    import TodoHeader from 'TodoHeader.vue'
+    import TodoHeader from 'TodoInput.vue'
+    import TodoHeader from 'odoList.vue'
+    import TodoHeader from 'TodoFooter.vue'
+    
+    export default {
+      components: {
+        'TodoHeader':TodoHeader,
+        'TodoHeader':TodoInput,
+        'TodoHeader':TodoList,
+        'TodoHeader':TodoFooter
+      }
+    }
   </script>
+  <style>
+  </style>
 </body>
 </html>
